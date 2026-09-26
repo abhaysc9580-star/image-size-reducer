@@ -1,237 +1,79 @@
-<div style="background: linear-gradient(135deg, rgb(30, 41, 59) 0%, rgb(15, 23, 42) 100%); border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 25px -5px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-bottom: 20px; overflow: hidden; padding: 30px 15px; position: relative; text-align: center; box-sizing: border-box;">
-    
-    <div style="background: radial-gradient(circle, rgba(56, 189, 248, 0.08) 0%, rgba(15, 23, 42, 0) 70%); height: 200%; left: -50%; position: absolute; top: -50%; transform: rotate(15deg); width: 200%; pointer-events: none;">
+<div style="background: linear-gradient(135deg, rgb(15, 23, 42) 0%, rgb(30, 41, 59) 100%); border-radius: 20px; padding: 30px 20px; max-width: 560px; margin: 20px auto; box-shadow: 0 15px 35px rgba(0,0,0,0.4); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; box-sizing: border-box;">
+
+    <!-- TOP HEADER BANNER -->
+    <div style="text-align: center; margin-bottom: 25px; position: relative;">
+        <div style="display: inline-block; margin-bottom: 10px;">
+            <svg fill="none" height="50" style="filter: drop-shadow(0 4px 6px rgba(56, 189, 248, 0.3));" viewBox="0 0 24 24" width="50" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 16V14C21 12.8954 20.1046 12 19 12M19 12M19 12V10C19 8.89544 18.1046 8 17 8M5 12H12M19 12H17M5 12C3.89543 12 3 11.1046 3 10V8C3 6.89543 3.89543 6 5 6M5 6H7M12 6H17M5 6C6.10457 6 7 6.89543 7 8M12 6C10.8954 6 10 6.89543 10 8M17 8C18.1046 8 19 8.89544 19 10M17 8C17 6.89543 16.1046 6 15 6M12 8V18C12 19.1046 11.1046 20 10 20H8C6.89543 20 6 19.1046 6 18V16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="#38bdf8"></path>
+            </svg>
+        </div>
+        <h1 style="color: #f1f5f9; font-size: 22px; font-weight: 800; letter-spacing: 0.5px; margin: 0 0 8px 0; text-transform: uppercase;">
+            FREE ONLINE <span style="color: #38bdf8;">IMAGE COMPRESSOR</span>
+        </h1>
+        <p style="color: #94a3b8; font-size: 13px; margin: 0; line-height: 1.4;">
+            Instantly reduce your image file size (MB to KB) without losing quality.
+        </p>
     </div>
 
-    <div style="display: inline-block; margin-bottom: 15px; position: relative;">
-        <svg fill="none" height="60" style="filter: drop-shadow(0 4px 6px rgba(56, 189, 248, 0.3));" viewBox="0 0 24 24" width="60" xmlns="http://www.w3.org/2000/svg">
-            <path d="M21 16V14C21 12.8954 20.1046 12 19 12M19 12M19 12V10C19 8.89544 18.1046 8 17 8M5 12H12M19 12H17M5 12C3.89543 12 3 11.1046 3 10V8C3 6.89543 3.89543 6 5 6M5 6H7M12 6H17M5 6C6.10457 6 7 6.89543 7 8M12 6C10.8954 6 10 6.89543 10 8M17 8C18.1046 8 19 8.89544 19 10M17 8C17 6.89543 16.1046 6 15 6M12 8V18C12 19.1046 11.1046 20 10 20H8C6.89543 20 6 19.1046 6 18V16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="#38bdf8">
-        </path></svg>
-    </div>
-
-    <h1 style="color: #f1f5f9; font-size: 26px; font-weight: 800; letter-spacing: 1px; margin: 0px 0px 10px; position: relative; text-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px; text-transform: uppercase;">
-        FREE ONLINE
-        <span style="color: #38bdf8;">IMAGE COMPRESSOR</span>
-    </h1>
-
-    <p style="color: #94a3b8; font-size: 15px; font-weight: 400; line-height: 1.5; margin: 0px auto; max-width: 600px; position: relative;">
-        Instantly reduce your image file size (MB to KB) without losing quality. Fast, secure, and easy to use.
-    </p>
-</div>
-
-<div class="tool-wrapper">
-    <div class="container">
+    <!-- TOOL CONTAINER -->
+    <div class="tool-wrapper" style="background: #ffffff; padding: 25px; border-radius: 14px; box-shadow: 0 8px 20px rgba(0,0,0,0.15); text-align: center; box-sizing: border-box;">
         <div class="tool-header">
-            <h2>Image Size Reducer</h2>
-            <p>Upload your image, choose compression level, and compress instantly.</p>
+            <h2 style="color: #1a202c; margin-bottom: 5px; font-size: 20px;">Image Size Reducer</h2>
+            <p style="color: #718096; font-size: 13px; margin-bottom: 20px;">Upload your image, choose compression level, and compress instantly.</p>
         </div>
         
-        <div class="upload-box">
+        <div class="upload-box" style="border: 2px dashed #cbd5e0; padding: 15px; border-radius: 8px; background: #fafbfc;">
             <input accept="image/*" id="imageInput" style="display: none;" type="file" />
-            <label for="imageInput" class="upload-btn" style="cursor: pointer;">
-                <svg fill="none" height="20" stroke-width="2" stroke="currentColor" style="margin-right: 8px; vertical-align: middle;" viewBox="0 0 24 24" width="20"><path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <label for="imageInput" class="upload-btn" style="background: linear-gradient(135deg, #3182ce 0%, #2b6cb0 100%); color: white; padding: 10px 20px; border-radius: 6px; cursor: pointer; display: inline-block; font-weight: 600; font-size: 14px;">
                 Choose Image
             </label>
-            <span class="file-name" id="fileName">No file chosen</span>
+            <span class="file-name" id="fileName" style="display: block; margin-top: 8px; font-size: 12px; color: #4a5568; word-break: break-all;">No file chosen</span>
         </div>
 
-        <!--Selected Image Preview Box-->
-        <div class="preview-section" id="previewSection" style="display: none; margin-top: 20px;">
-            <h3 style="color: #2d3748; font-size: 15px; margin-bottom: 8px;">Selected Image Preview</h3>
-            <div class="image-preview-box">
-                <img alt="Selected Preview" id="previewImage" />
+        <!-- Preview Box -->
+        <div class="preview-section" id="previewSection" style="display: none; margin-top: 15px; text-align: left;">
+            <h3 style="color: #2d3748; font-size: 14px; margin-bottom: 6px;">Selected Image Preview</h3>
+            <div class="image-preview-box" style="max-height: 160px; overflow: hidden; border-radius: 6px; border: 1px solid #e2e8f0; background: #f7fafc; text-align: center;">
+                <img alt="Selected Preview" id="previewImage" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
             </div>
         </div>
 
-        <div class="options-section" id="optionsSection" style="display: none;">
+        <!-- Options Section -->
+        <div class="options-section" id="optionsSection" style="display: none; margin-top: 15px; text-align: left; background: #f7fafc; padding: 15px; border-radius: 8px; border: 1px solid #e2e8f0;">
             <div class="input-group">
-                <label>Select Compression Level:</label>
-                <select id="compressionLevel">
+                <label style="display: block; font-size: 12px; font-weight: 600; color: #2d3748; margin-bottom: 6px;">Select Compression Level:</label>
+                <select id="compressionLevel" style="width: 100%; padding: 8px; border-radius: 6px; border: 1px solid #cbd5e0; background: #fff; font-size: 13px; color: #2d3748; box-sizing: border-box;">
                     <option value="0.7">Light Compression (Best Quality)</option>
                     <option selected="" value="0.5">Medium Compression (Recommended)</option>
                     <option value="0.3">High Compression (Small Size)</option>
                     <option value="0.1">Maximum Compression (Very Small Size)</option>
                 </select>
             </div>
-            <button class="action-btn" id="compressBtn">Compress Image Now</button>
+            <button class="action-btn" id="compressBtn" style="background: linear-gradient(135deg, #48bb78 0%, #38a169 100%); color: white; border: none; width: 100%; padding: 10px; border-radius: 6px; font-weight: 600; font-size: 14px; cursor: pointer; margin-top: 12px;">Compress Image Now</button>
         </div>
 
-        <div class="result-section" id="resultSection">
-            <h3>Compressed Result</h3>
-            <div class="image-preview-box">
-                <img alt="Compressed Image" id="outputImage" />
+        <!-- Result Section -->
+        <div class="result-section" id="resultSection" style="display: none; margin-top: 20px; border-top: 1px solid #e2e8f0; padding-top: 15px; text-align: left;">
+            <h3 style="font-size: 15px; color: #2d3748; margin-bottom: 8px;">Compressed Result</h3>
+            <div class="image-preview-box" style="max-height: 160px; overflow: hidden; border-radius: 6px; border: 1px solid #e2e8f0; background: #f7fafc; text-align: center;">
+                <img alt="Compressed Image" id="outputImage" style="max-width: 100%; height: auto; display: block; margin: 0 auto;" />
             </div>
-            <div class="info" id="imageInfo"></div>
-            <a class="download-btn" download="compressed-image.jpg" id="downloadBtn">Download Image</a>
+            <div class="info" id="imageInfo" style="font-size: 13px; color: #2d3748; margin: 12px 0; background: #edf2f7; padding: 8px; border-radius: 6px; text-align: center;"></div>
+            <a class="download-btn" download="compressed-image.jpg" id="downloadBtn" style="background: linear-gradient(135deg, #ed8936 0%, #dd6b20 100%); color: white; padding: 10px 15px; border-radius: 6px; text-decoration: none; display: block; font-weight: 600; font-size: 14px; text-align: center;">Download Image</a>
         </div>
     </div>
-</div>
 
-<div style="background: rgb(15, 23, 42); border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.1); color: #e2e8f0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-top: 20px; padding: 20px; box-sizing: border-box;">
-    <h3 style="color: #38bdf8; font-size: 18px; margin-top: 0px;">How to Use This Image Size Reducer:</h3>
-    <ol style="line-height: 1.6; margin-bottom: 0px; padding-left: 20px; font-size: 14px;">
-        <li><b>Upload Your Image:</b> Click on the "Choose Image" button to select your image (JPG, PNG) from your mobile or PC.</li>
-        <li><b>Automatic Compression:</b> Choose your preferred compression level and click compress to reduce file size instantly.</li>
-        <li><b>Download:</b> Click the <b>Download Image</b> button to save your compressed image.</li>
-    </ol>
-</div>
+    <!-- HOW TO USE GUIDE -->
+    <div style="margin-top: 20px; color: #e2e8f0; font-size: 13px;">
+        <h3 style="color: #38bdf8; font-size: 15px; margin-top: 0; margin-bottom: 8px;">How to Use This Tool:</h3>
+        <ol style="line-height: 1.5; margin: 0; padding-left: 18px;">
+            <li>Click on <b>"Choose Image"</b> to select an image from your device.</li>
+            <li>Choose your preferred quality level and click <b>"Compress Image Now"</b>.</li>
+            <li>Click <b>"Download Image"</b> to save your compressed file.</li>
+        </ol>
+    </div>
 
-<style>
-    .tool-wrapper {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-        padding: 30px 15px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        box-sizing: border-box;
-        border-radius: 12px;
-    }
-    .tool-wrapper .container {
-        background: #ffffff;
-        padding: 35px;
-        border-radius: 16px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        max-width: 480px;
-        width: 100%;
-        text-align: center;
-        box-sizing: border-box;
-    }
-    .tool-wrapper .tool-header h2 {
-        color: #1a202c;
-        margin-bottom: 8px;
-        font-size: 24px;
-    }
-    .tool-wrapper .tool-header p {
-        color: #718096;
-        font-size: 14px;
-        margin-bottom: 25px;
-    }
-    .tool-wrapper .upload-box {
-        border: 2px dashed #cbd5e0;
-        padding: 20px;
-        border-radius: 10px;
-        background: #fafbfc;
-        transition: border-color 0.3s;
-    }
-    .tool-wrapper .upload-box:hover {
-        border-color: #3182ce;
-    }
-    .tool-wrapper .upload-btn {
-        background: linear-gradient(135deg, #3182ce 0%, #2b6cb0 100%);
-        color: white;
-        padding: 12px 24px;
-        border-radius: 8px;
-        cursor: pointer;
-        display: inline-block;
-        font-weight: 600;
-        font-size: 15px;
-        box-shadow: 0 4px 12px rgba(49, 130, 206, 0.3);
-        transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .tool-wrapper .upload-btn:hover {
-        transform: translateY(-1px);
-        box-shadow: 0 6px 15px rgba(49, 130, 206, 0.4);
-    }
-    .tool-wrapper .file-name {
-        display: block;
-        margin-top: 10px;
-        font-size: 13px;
-        color: #4a5568;
-        word-break: break-all;
-    }
-    .tool-wrapper .options-section {
-        margin-top: 20px;
-        text-align: left;
-        background: #f7fafc;
-        padding: 20px;
-        border-radius: 10px;
-        border: 1px solid #e2e8f0;
-    }
-    .tool-wrapper .input-group label {
-        display: block;
-        font-size: 13px;
-        font-weight: 600;
-        color: #2d3748;
-        margin-bottom: 8px;
-    }
-    .tool-wrapper select {
-        width: 100%;
-        padding: 10px;
-        border-radius: 8px;
-        border: 1px solid #cbd5e0;
-        background: #fff;
-        font-size: 14px;
-        color: #2d3748;
-        outline: none;
-        box-sizing: border-box;
-    }
-    .tool-wrapper .action-btn {
-        background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
-        color: white;
-        border: none;
-        width: 100%;
-        padding: 12px;
-        border-radius: 8px;
-        font-weight: 600;
-        font-size: 15px;
-        cursor: pointer;
-        margin-top: 15px;
-        box-shadow: 0 4px 12px rgba(72, 187, 120, 0.3);
-        transition: transform 0.2s;
-    }
-    .tool-wrapper .action-btn:hover {
-        transform: translateY(-1px);
-    }
-    .tool-wrapper .result-section {
-        margin-top: 25px;
-        display: none;
-        border-top: 1px solid #e2e8f0;
-        padding-top: 20px;
-    }
-    .tool-wrapper .result-section h3 {
-        font-size: 16px;
-        color: #2d3748;
-        margin-bottom: 12px;
-    }
-    .tool-wrapper .image-preview-box {
-        max-height: 200px;
-        overflow: hidden;
-        border-radius: 8px;
-        border: 1px solid #e2e8f0;
-        background: #f7fafc;
-        display: inline-block;
-    }
-    .tool-wrapper img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-    }
-    .tool-wrapper .info {
-        font-size: 14px;
-        color: #2d3748;
-        margin: 15px 0;
-        background: #edf2f7;
-        padding: 10px;
-        border-radius: 6px;
-    }
-    .tool-wrapper .download-btn {
-        background: linear-gradient(135deg, #ed8936 0%, #dd6b20 100%);
-        color: white;
-        padding: 12px 20px;
-        border-radius: 8px;
-        text-decoration: none;
-        display: block;
-        font-weight: 600;
-        font-size: 15px;
-        box-shadow: 0 4px 12px rgba(237, 137, 54, 0.3);
-        transition: transform 0.2s;
-    }
-    .tool-wrapper .download-btn:hover {
-        transform: translateY(-1px);
-    }
-</style>
+</div>
 
 <script>
     const imageInput = document.getElementById('imageInput');
