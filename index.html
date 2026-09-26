@@ -1,3 +1,24 @@
+<div style="background: linear-gradient(135deg, rgb(30, 41, 59) 0%, rgb(15, 23, 42) 100%); border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 25px -5px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-bottom: 20px; overflow: hidden; padding: 30px 15px; position: relative; text-align: center; box-sizing: border-box;">
+    
+    <div style="background: radial-gradient(circle, rgba(56, 189, 248, 0.08) 0%, rgba(15, 23, 42, 0) 70%); height: 200%; left: -50%; position: absolute; top: -50%; transform: rotate(15deg); width: 200%; pointer-events: none;">
+    </div>
+
+    <div style="display: inline-block; margin-bottom: 15px; position: relative;">
+        <svg fill="none" height="60" style="filter: drop-shadow(0 4px 6px rgba(56, 189, 248, 0.3));" viewBox="0 0 24 24" width="60" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 16V14C21 12.8954 20.1046 12 19 12M19 12M19 12V10C19 8.89544 18.1046 8 17 8M5 12H12M19 12H17M5 12C3.89543 12 3 11.1046 3 10V8C3 6.89543 3.89543 6 5 6M5 6H7M12 6H17M5 6C6.10457 6 7 6.89543 7 8M12 6C10.8954 6 10 6.89543 10 8M17 8C18.1046 8 19 8.89544 19 10M17 8C17 6.89543 16.1046 6 15 6M12 8V18C12 19.1046 11.1046 20 10 20H8C6.89543 20 6 19.1046 6 18V16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="#38bdf8">
+        </path></svg>
+    </div>
+
+    <h1 style="color: #f1f5f9; font-size: 26px; font-weight: 800; letter-spacing: 1px; margin: 0px 0px 10px; position: relative; text-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px; text-transform: uppercase;">
+        FREE ONLINE
+        <span style="color: #38bdf8;">IMAGE COMPRESSOR</span>
+    </h1>
+
+    <p style="color: #94a3b8; font-size: 15px; font-weight: 400; line-height: 1.5; margin: 0px auto; max-width: 600px; position: relative;">
+        Instantly reduce your image file size (MB to KB) without losing quality. Fast, secure, and easy to use.
+    </p>
+</div>
+
 <div class="tool-wrapper">
     <div class="container">
         <div class="tool-header">
@@ -6,8 +27,8 @@
         </div>
         
         <div class="upload-box">
-            <input accept="image/*" id="imageInput" type="file" style="display: none;" />
-            <label for="imageInput" class="upload-btn">
+            <input accept="image/*" id="imageInput" style="display: none;" type="file" />
+            <label for="imageInput" class="upload-btn" style="cursor: pointer;">
                 <svg fill="none" height="20" stroke-width="2" stroke="currentColor" style="margin-right: 8px; vertical-align: middle;" viewBox="0 0 24 24" width="20"><path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
                 Choose Image
             </label>
@@ -46,6 +67,15 @@
     </div>
 </div>
 
+<div style="background: rgb(15, 23, 42); border-radius: 12px; border: 1px solid rgba(255, 255, 255, 0.1); color: #e2e8f0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin-top: 20px; padding: 20px; box-sizing: border-box;">
+    <h3 style="color: #38bdf8; font-size: 18px; margin-top: 0px;">How to Use This Image Size Reducer:</h3>
+    <ol style="line-height: 1.6; margin-bottom: 0px; padding-left: 20px; font-size: 14px;">
+        <li><b>Upload Your Image:</b> Click on the "Choose Image" button to select your image (JPG, PNG) from your mobile or PC.</li>
+        <li><b>Automatic Compression:</b> Choose your preferred compression level and click compress to reduce file size instantly.</li>
+        <li><b>Download:</b> Click the <b>Download Image</b> button to save your compressed image.</li>
+    </ol>
+</div>
+
 <style>
     .tool-wrapper {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -56,6 +86,7 @@
         align-items: center;
         width: 100%;
         box-sizing: border-box;
+        border-radius: 12px;
     }
     .tool-wrapper .container {
         background: #ffffff;
